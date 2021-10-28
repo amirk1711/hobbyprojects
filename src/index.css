@@ -9,6 +9,204 @@ body {
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+a {
+	text-decoration: none;
+	color: black;
+}
+.home {
+	/* border: 1px solid blue; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.empty-project-container {
+	width: 70%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 50px auto;
+	background: #f6f6f6;
+	background: -webkit-linear-gradient(top right, #ededed, #dbdbdb);
+	background: -moz-linear-gradient(top right, #ededed, #d2d2d2);
+	background: linear-gradient(to bottom left, #ededed, #ececec);
+	border: 1px solid transparent;
+}
+.empty-project-container p {
+	padding: 8px 0;
+	font-size: 18px;
+	color: #424242;
+}
 .red-asterisk {
 	color: red;
+}
+
+.projects-container {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid rgb(0, 155, 202);
+	margin-top: 10px;
+}
+.project-item-card {
+	width: 28%;
+	border: 1.5px solid gray;
+	border-radius: 4px;
+	margin: 28px;
+}
+.editndelete {
+	border-bottom: 1px solid gray;
+	display: flex;
+	justify-content: flex-end;
+}
+.delete-btn {
+	cursor: pointer;
+}
+.view-link {
+	display: block;
+}
+.thumbnail-container {
+	display: inline-block;
+	width: 100%;
+}
+.thumbnail {
+	width: 100%;
+	display: block;
+	background-size: cover;
+}
+.create-link {
+	text-decoration: none;
+	display: inline-block;
+}
+
+.create-link button {
+	display: block;
+	border: none;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 16px 24px;
+	font-size: 18px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	background-color: rgb(7, 59, 214);
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+}
+button {
+	background-color: transparent;
+	border: none;
+}
+.edit-link {
+	display: inline-block;
+	text-decoration: none;
+	vertical-align: baseline;
+	box-sizing: border-box;
+	margin-top: 4px;
+	padding: 2px 4px;
+	color: rgb(39, 25, 240);
+}
+
+.project-details {
+	padding: 8px 6px;
+}
+.title {
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 0px;
+	margin-bottom: 12px;
+}
+.description {
+	margin-top: 0px;
+	padding: 4px;
+	word-break: break-word;
+}
+
+.add-project-form {
+	border: 1px solid lightgrey;
+	width: 80%;
+	max-width: 500px;
+	margin: 40px auto 10px;
+	padding: 14px;
+}
+.edit-create-text {
+	font-size: 22px;
+	text-align: center;
+	margin: 10px 0 30px 0;
+}
+.input-field-container {
+	width: 100%;
+	margin-bottom: 16px;
+}
+.input-field-container:last-child {
+	margin-bottom: 0px;
+	display: flex;
+	justify-content: center;
+}
+.input-label {
+	/* margin-left: 8px; */
+	display: inline-block;
+	margin-bottom: 8px;
+	margin-left: 8px;
+}
+.input-field {
+	width: 96%;
+	height: 30px;
+	font-size: 14px;
+	border-radius: 4px;
+	padding: 2px 6px;
+	border: 1px solid lightgrey;
+}
+.input-field:focus {
+	outline: 1px solid blue;
+}
+
+.textarea {
+	resize: vertical;
+	height: 56px;
+	white-space: pre-wrap;
+}
+.meta-text {
+	font-size: 14px;
+	color: gray;
+}
+.create-save-btn {
+	padding: 10px 12px;
+	font-size: 14px;
+	box-sizing: border-box;
+	background-color: rgb(7, 59, 214);
+	color: white;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.view-project-container {
+	width: 80%;
+	margin: 34px auto 10px;
+	display: flex;
+}
+.left-view {
+	flex: 6.5;
+	margin-right: 20px;
+}
+.right-view {
+	flex: 3.5;
+}
+
+.view-project-title p {
+	font-size: 26px;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+.about {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 24px;
+}
+.full-desc {
+	padding: 8px 18px 8px 0;
+	line-height: 1.6;
+	text-align: justify;
+	word-break: break-word;
+}
+.details-img {
+	width: 100%;
 }

@@ -1,4 +1,10 @@
-import { ADD_PROJECT, DELETE_PROJECT, EDIT_PROJECT, FETCH_PROJECT } from "../actions/actionTypes";
+import {
+	ADD_PROJECT,
+	CLEAR_STATE,
+	DELETE_PROJECT,
+	EDIT_PROJECT,
+	FETCH_PROJECT,
+} from "../actions/actionTypes";
 
 const initialProjectState = {
 	projects: [],
@@ -41,6 +47,11 @@ export default function projects(state = initialProjectState, action) {
 			return {
 				...state,
 				toEditProject: fetchProject,
+			};
+		case CLEAR_STATE:
+			return {
+				...state,
+				toEditProject: {},
 			};
 		default:
 			return state;

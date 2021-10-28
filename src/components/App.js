@@ -21,8 +21,15 @@ function App(props) {
 						return <Home {...props} />;
 					}}
 				/>
-				<Route exact path="/project/:id" component={Project} />
 				<Route exact path="/add/project" component={AddProject} />
+				<Route
+					exact
+					path="/project/:id"
+					render={(props) => {
+						handleFetch(props.match.params.id);
+						return <Project {...props} project={toEditProject} />;
+					}}
+				/>
 				<Route
 					exact
 					path="/edit/project/:id"

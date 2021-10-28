@@ -1,4 +1,10 @@
-import { ADD_PROJECT, DELETE_PROJECT, EDIT_PROJECT, FETCH_PROJECT } from "./actionTypes";
+import {
+	ADD_PROJECT,
+	CLEAR_STATE,
+	DELETE_PROJECT,
+	EDIT_PROJECT,
+	FETCH_PROJECT,
+} from "./actionTypes";
 
 export function addProject(project) {
 	return {
@@ -22,5 +28,10 @@ export function fetchProject(projectId) {
 	return {
 		type: FETCH_PROJECT,
 		projectId,
+	};
+}
+export function clearState() {
+	return {
+		type: CLEAR_STATE,
 	};
 }
